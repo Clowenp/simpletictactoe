@@ -56,6 +56,16 @@ const Grid = () => {
 
         if(boxes[num] != ''){
             alert('Box already has an element. Play some where else!');
+            let og = false;
+            for (let box in boxes) {
+                if(box===""){
+                    og = true;
+                }
+            }
+            console.log(og);
+            if(og===false){
+                setWinner("No one");
+            }
             return;
         }
 
@@ -71,7 +81,6 @@ const Grid = () => {
 
         setBoxes(squares);
         win(squares);
-        console.log(squares);
     }
 
     const Box = ({num}) =>{
