@@ -1,0 +1,18 @@
+table td{
+    border: 1px solid burlywood;
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.restartButton {
+    height: 40px;
+    width: 80px;
+    border-radius: 15px 15px;
+    background-color: aquamarine;
+}
