@@ -54,7 +54,7 @@ const Grid = () => {
 
     const handleClick = (num) => {
 
-        if(boxes[num] != ''){
+        if(boxes[num] !== ''){
             alert('Box already has an element. Play some where else!');
             let og = false;
             for (let box in boxes) {
